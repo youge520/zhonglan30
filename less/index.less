@@ -1,0 +1,353 @@
+
+// bootstrap把所有a变成蓝色 需要覆盖 而且下划线使用 hover为了 focus伪类添加 使用对应伪类覆盖
+a{
+    color:#666;
+    &:hover{
+        color:#666;
+        text-decoration: none;
+    }
+    &:focus{
+        color:#666;
+        text-decoration: none;
+    }
+}
+li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5{
+    font-weight: 300;
+}
+// 导航条区域
+#nav {
+    border-bottom: 2px solid #0ba1e4;
+    margin-bottom: 0;
+    .container {
+        .navbar-header {
+            .navbar-toggle {
+                margin-top: 20px;
+            }
+
+            a {
+                line-height: 50px;
+
+            }
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                li {
+                    a {
+                        line-height: 50px;
+                        // font-size: 16px;
+                        .line-top{
+                            border-bottom: 1px solid #0ba1e4;
+                            width: 18px;
+                            margin: auto;
+                        }
+                        &:hover{
+                            color: #0ba1e4;
+                        }
+                        &.active{
+                            color: #0ba1e4;
+                        }
+                    }
+                    
+
+                }
+            }
+        }
+    }
+
+}
+
+// 轮播图区域
+#slide{
+    .large-image{
+        width: 100%;
+        height: 540px;
+        // background-position: center center;
+    }
+    .small-image{
+        width: 100%;
+    }
+}
+
+// 我们的成绩
+#out-data{
+    padding: 50px 0;
+    .container{
+        .row{
+            .main-title{
+                .h1{
+                    font-weight: 300;
+                    font-size: 36px;
+                }
+                .line-big{
+                    width: 80px;
+                    margin: 30px auto 26px;
+                }
+                .line{
+                    border-top: 2px solid #0ba1e4;
+                }
+                .h2{
+                    small{
+                        font-weight: 300;
+                    }
+                }
+            }
+            .sum-apply{
+                .number-wrapper{
+                    span{
+                        font-family: "Roboto", Arial, Tahoma, sans-serif;
+                        font-size: 70px;
+                        color: #0ba1e4;
+                        line-height: 1.5em;
+                        @media(max-width:992px) and (min-width:768px){
+                            font-size: 50px;
+                        }
+                    }
+                }
+                h4{
+                    color: #919191;
+                }
+            }
+        }
+    }
+}
+
+// 我们的优势
+#out-youshi {
+    background-color: #e1e1e1;
+    padding: 50px 0;
+
+    .container {
+        .row {
+            .main-title {
+                .h1 {
+                    font-weight: 300;
+                    font-size: 36px;
+                }
+
+                .line-big {
+                    width: 80px;
+                    margin: 30px auto 26px;
+                }
+
+                .line {
+                    border-top: 2px solid #0ba1e4;
+                }
+
+                .h2 {
+                    small {
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .our-time {
+                .our-whyus-item {
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    .glyphicon {
+                        font-size: 80px;
+                        color: #0ba1e4;
+                        line-height: 1.5em;
+                    }
+                    h3{
+                        line-height: 1.5em;
+                        font-size: 24px;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        line-height: 1.5em;
+                        margin: 0 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.main-title{
+    margin-bottom: 30px;
+    .h1{
+        font-weight: 300;
+        font-size: 36px;
+    }
+    .line-big{
+        width: 80px;
+        margin: 30px auto 26px;
+    }
+    .line{
+        border-top: 2px solid #0ba1e4;
+    }
+    .h2{
+        small{
+            font-weight: 300;
+        }
+    }
+}
+
+// 我们的服务
+#our-service{
+    padding: 50px 0;
+    .container{
+        .row{
+            .card-box{
+                margin-top: 20px;
+                margin-bottom: 60px;
+                .card-area{
+                    .card-item{
+                        border: 1px solid #c1c1c1;
+                        background-color: #fafafa;
+                        width: 25%;
+                        float: left;
+                        transition: all 1s ease-in-ou;
+                        .card-title{
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                            border-bottom: 1px solid #c1c1c1;
+                            h4{
+                                margin: 0;
+                                line-height: 2em;
+                                color: #0ba1e4;
+                                font-weight: bold;
+                            }
+                            p{
+                                margin: 0;
+                                line-height: 2em;
+                            }
+                        }
+                        .card-content{
+                            padding-top: 20px;
+                            padding-bottom: 30px;
+                        }
+                        p{
+                            line-height: 3em;
+                            padding: 0 0 10px;
+                        }
+                        &:hover{
+                            &.card-active{
+                                background-color: #0ba1e4;
+                                border: 1px solid #0ba1e4;
+                                color: #fff;
+                                box-shadow: 0 0 20px rgba(45,183,245,.5);
+                                transform: scale(1.1);
+                                h4{
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        
+
+                    }
+                    
+                }
+            }
+            .btn-outline-blue{
+                color: #0ba1e4;
+                border: 1px solid #0ba1e4;
+                font-size: 16px;
+                padding: 10px 16px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+// 客户的鼓励
+#our-example{
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    .container{
+        .row{
+            .our-example-box{
+                padding-top: 30px;
+                padding-bottom: 30px;
+                .our-example-popover{
+                    height: 190px;
+                    padding-bottom: 0;
+                    .popover{
+                        width: 100%;
+                        height: 160px;
+                        max-width: 100%;
+                        background-color: #f5f5f5;
+                        border: 1px solid #34a263;
+                        display: block;
+                        box-shadow: none;
+                        position: relative;
+                        float: left;
+                        margin: 0;
+                        .arrow{
+                            border-width: 11px;
+                            background-color: #34a263;
+                            position: absolute;
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                margin-left: -10px;
+                                left: 50%;
+                                margin-left: -11px;
+                                border-color: transparent;
+                                border-style: solid;
+                                border-bottom-width: 0;
+                                bottom: 1px;
+                            &::after{
+                                content: '';
+                                border-width: 10px;
+                                bottom: 1px;
+                                border-bottom-width: 0;
+                                border-top-color: #f5f5f5 !important;
+                                
+                            }
+                        }
+                        .popover-title-touxiang{
+                            width: 100%;
+                            height: 50px;
+                            position: absolute;
+                            top: -26px;
+                            margin: 0;
+                            left: 0;
+                            text-align: center;
+                            img{
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 100%;
+                            }
+                        }
+                        .popover-content{
+                            margin: 9% 0 0;
+                            padding: 9px 14px;
+                            .popover-content-text{
+                                padding: 0 0 10px;
+                            }
+                            .popover-content-tag{
+                                position: absolute;
+                                font-size: 12px;
+                                bottom: 12px;
+                                width: 91%;
+                                .bingzhong{
+                                    float: left;
+                                    background-color: #aaa;
+                                    color: #fff;
+                                    padding: .5% 3.5%;
+                                    overflow: hidden;
+                                }
+                                .position-address{
+                                    float: right;
+                                    overflow: hidden;
+                                    
+                                    span{
+                                        color: #aaa;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
